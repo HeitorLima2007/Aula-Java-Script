@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+
+	<title></title>
+
+		<script>
+
+			//crie um script que calculew a área do triângulo, do quadrado, do retângulo e do losango
+
+			var figura = prompt('Escolha entre triângulo, quadrado, retângulo ou losango para calcular a área')
+			var base = prompt('Digite a base da figura')
+			var altura =prompt('Digite a altura da figura')
+			altura = parseFloat(altura)
+			base = parseFloat(base)
+
+			function triangulo(altura, base){
+
+			var area = altura * base/2
+			return area
+			}
+
+			function quadrado(altura, base){
+
+			var area = altura* base
+			return area
+			}
+
+			function retangulo(altura, base){
+
+			var area = altura * base
+			return area
+			}
+
+			function losango(altura, base){
+
+			var area = altura * base
+			return area
+			}
+
+			switch(figura){
+
+			case 'triângulo':
+
+			triangulo(altura, base)
+			document.write('A área do triângulo é igual a: '+triangulo(altura, base)+'<br>')
+			break;
+
+			case 'quadrado':
+
+			quadrado(altura, base)
+			document.write('A área do quadrado é igual a: '+quadrado(altura, base)+'<br>')
+			break;
+
+			case 'retângulo':
+
+			retangulo
+			document.write('A área do retângulo é igual a: '+retangulo(altura, base)+'<br>')
+			break;
+
+			case 'losango':
+
+			losango(altura, base)
+			document.write('A área do losango é igual a: '+losango(altura, base)+'<br>')
+			break;
+
+			default:
+
+			document.write("Não é possível calcular essa figura!")
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
