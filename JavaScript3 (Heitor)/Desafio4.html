@@ -13,17 +13,58 @@
 
 var figura = prompt("Escolha entre quadrado, triângulo, retângulo ou losango para medir a área")
 
-var alturaquadrado = prompt("Digite a altura do quadrado")
-var basequadrado = prompt("Digite a base do quadrado")
-var areaquadrado = alturaquadrado * basequadrado
-console.log(areaquadrado)
 
-switch(figura)
+var area = altura * base
+console.log(area||arealosango)
+
+base = parseFloat(base)
+altura = parseFloat(altura)
+
+switch(figura){
 
 case 'quadrado':
 
-document.write('area = '+ areaquadrado)
+var altura = prompt("Digite a altura da figura")
+var base = prompt("Digite a base da figura")
+var area = altura * base
+
+document.write('area = '+ area)
 break;
+
+case 'retângulo':
+
+var altura = prompt("Digite a altura da figura")
+var base = prompt("Digite a base da figura")
+var area = altura * base
+
+document.write('area = '+ area)
+break;
+
+case 'triângulo':
+
+var altura = prompt("Digite a altura da figura")
+var base = prompt("Digite a base da figura")
+var area = altura * base
+
+document.write('area = '+ area/2)
+break;
+
+case 'losango':
+
+var diagonal1 = prompt('Digite o valor da diagonal maior')
+var diagonal2 = prompt('Digite o valor da diagonal menor')
+var arealosango = diagonal1*diagonal2 
+
+
+document.write('area = '+ arealosango)
+break;
+
+default:
+
+document.write('Não posso calcular essa figura')
+
+}
+
 
 </script>
 
