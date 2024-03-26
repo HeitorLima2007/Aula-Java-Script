@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+  	<head>
+
+		<title></title>
+
+		<script>
+
+			var notaA = prompt('Digite a primeira nota do aluno: ')
+			document.write('Sua primeira nota foi: '+notaA+'<br>')
+			
+			var notaB = prompt('Digite a segunda nota do aluno: ')
+			document.write('Sua segunda nota foi: '+notaB+'<br>')
+			
+			var notaC =prompt('Digite a terceira nota do aluno: ')
+			document.write('Sua segunda nota foi: '+notaC+'<br>')
+			
+			notaA = parseFloat(notaA)
+			notaB = parseFloat(notaB)
+			notaC = parseFloat(notaC)
+			
+			var media = 0.0
+			
+			var soma = notaA+notaB+notaC
+			
+			document.write(soma+'<br>')
+			
+			media = soma/3  /*(notaA+notaB+notaC)/3*/
+			
+			/*
+			
+			if(media>=7){
+			
+			document.write('A sua média = '+media+'. Você está aprovado')
+			
+			}else{
+			
+			document.write('a sua média = '+media+'. Você está reprovado')
+			
+			}
+			
+			*/
+			
+			var resultado = (media>=7)?'A sua média = '+media+'. Você está aprovado':'A sua média = '+media+' .Você está reprovado'
+			
+			document.write(resultado)
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
