@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+	<head>
+
+		<title>Cauculador de IMC</title>
+		
+		<script>
+		
+
+		
+		//document.write("peso: "+peso.value)
+		
+			function calcularIMC(){
+			
+				var peso = document.getElementById("peso").value
+				console.log(peso)
+				var altura = document.getElementById("altura").value
+				console.log(altura)
+				/*var peso = prompt("Digite seu peso(Kg): ")
+				var altura =  prompt("Digite sua altura(m): ")*/
+				
+				peso = parseFloat(peso)
+				altura =  parseFloat(altura)
+				
+				var imc = peso / (altura*altura)
+				
+				console.log(imc)
+				
+				if(imc<=18.5){
+				
+				document.write('Voce esta abaixo do peso')
+				
+				}else if(imc>=18.5 && imc<=24.9){
+				
+				document.write('Parabens seu peso esta ideal')
+				
+				}else{
+				
+				document.write('Voce esta com sobrepeso')
+				
+				}
+				
+				/*var resultado(imc<=18,5)?'Voce esta abaixo do peso':(imc>=18.5 && imc<=24.9)?'Parabens seu peso esta normal':'Voce esta com sobrepeso'*/
+			}
+		
+		</script>
+		
+	</head>
+
+	<body>
+
+		<form>
+			
+			<label for = 'peso'></label>
+			<input type = 'text' id ="peso" value = "" placeholder = "Digite seu peso">
+			<label for = 'altura'></label>
+			<input type = 'text' id ="altura" value = "" placeholder = "Digite sua altura">
+			<input type = 'button' onclick = "calcularIMC()" value = "Calcular IMC">
+		
+		</form>
+		
+				
+		
+	</body>
+
+</html>
