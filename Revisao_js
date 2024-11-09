@@ -1,0 +1,62 @@
+/*Crie um programa que imprima os números de 1 a 10 usando olaço "for"*/
+
+for(let i = 1; i<=10;i++){
+  console.log("Número: "+i)
+}
+
+let i = 1
+
+while(i<=10){
+  console.log(i)
+  i++
+}
+
+Crie um programa que imprima os números de 10 a 1 utilizando um laço for de trás pra frente
+
+for(let r = 10; r>=1; r--){
+  console.log("Número: "+r)
+}
+
+let r = 10
+
+while(r>=1){
+  console.log(r)
+  r--
+}
+
+/*Escreva um programa que calcule a soma de 1 até 100 utilizando um laço for e um laço while*/
+
+let soma = 0
+for(let c = 1; c<=100;c++){
+  soma = soma+c
+  console.log(soma)
+}
+
+let produto = 0
+let a = 1
+while(a<=100){
+  produto = produto + a
+  a++
+  console.log(produto)
+}
+
+/*Crie um programa que leia um úmero e imprima sua tabuada de 1 até 10*/
+let resultando = 0
+let multiplicador = 1
+
+for(let t = 1; t<=10;t++){
+  console.log('Tabudada do '+t)
+  for(let x = 0; x<=10; x++){
+    resultado = t * x
+    console.log(`${t} X ${x} = ${resultado}`)
+}
+console.log('--------------')
+}
+
+/*Faça um programa que imprima os números pares de 1 a 50 usando um laço for*/
+
+for(let p = 0;p<=50;p++){
+ if(p % 2 == 0){
+   console.log(p)
+ }
+}
