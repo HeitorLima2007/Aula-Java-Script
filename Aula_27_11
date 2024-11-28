@@ -1,0 +1,22 @@
+const leitura = require('readline-sync')
+let nomes = []
+let index = 0
+
+for(let i = 0;i<5;i++){
+let nome = leitura.question('Digite seu nome: ')
+nomes[i] = nome
+}
+
+let nome_curto = nomes[0]
+let qta_caracteres  = nomes[0].length
+
+while(index < nomes.length){
+      if(qta_caracteres > nomes[index].length){
+        nome_curto = nomes[index]
+        qta_caracteres  = nomes[index].length
+    }
+
+index++
+}
+    console.log(`Nome mais curto: ${nome_curto}`)
+    
