@@ -20,3 +20,21 @@ index++
 }
     console.log(`Nome mais curto: ${nome_curto}`)
     
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+    ]
+    
+   // console.log(matriz[0][1])
+const leitura = require('readline-sync')
+
+for(let m = 0;m<3;m++){
+    matriz[m] = []
+    for(let n=0;n<3;n++){
+        let valor = leitura.question("Digite um número para matriz: ")
+        matriz[m][n] = valor
+    console.log(`Linha: ${m}. Coluna: ${n}. Matriz: ${matriz[m][n]}`)
+    
+    }
+}
